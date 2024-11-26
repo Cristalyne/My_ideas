@@ -1,0 +1,7 @@
+name: CristalynePlugin
+version: '1.0.0'
+main: org.crateplugin.cristalynePlugin.Main
+api-version: '1.21'
+authors: [ Cristalyne ]
+description: my personal plugin
+website: https://github.com/Cristalyne
