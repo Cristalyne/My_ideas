@@ -5,3 +5,9 @@ api-version: '1.21'
 authors: [ Cristalyne ]
 description: my personal plugin
 website: https://github.com/Cristalyne
+
+commands:
+  settings:
+    description: définie certain parametre du plugin
+    permission: OP
+    permission-message: §8[§9My_ideas§8] §cVous n'avez pas les permission {PermissionNeeded.OP}
