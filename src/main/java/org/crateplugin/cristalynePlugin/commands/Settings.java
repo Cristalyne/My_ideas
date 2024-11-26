@@ -1,10 +1,11 @@
 package org.crateplugin.cristalynePlugin.commands;
 
+import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import org.crateplugin.cristalynePlugin.Main;
+import org.bukkit.inventory.Inventory;
 
 public class Settings implements CommandExecutor {
     @Override
@@ -12,7 +13,9 @@ public class Settings implements CommandExecutor {
 
         if(sender instanceof Player player){
 
-            player.sendMessage(Main.pluginPrefix + "hello world");
+            Inventory SettingsMenu = Bukkit.createInventory(null, 27, "§6§lSettings Menu");
+
+            player.openInventory(SettingsMenu);
 
         }
 
